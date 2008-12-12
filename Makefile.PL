@@ -1,8 +1,13 @@
+#!perl
+use strict;
+use warnings;
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+
 WriteMakefile(
-    'NAME'	=> 'Language::Functional',
-    'VERSION_FROM' => 'Functional.pm', # finds $VERSION
-    'dist' => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    'NAME'         => 'Language::Functional',
+    'VERSION_FROM' => 'Functional.pm',
+    'LICENSE'      => 'perl',
+    'AUTHOR'       => 'Leon Brocard <acme@astray.com>',
+    'ABSTRACT'     => 'a module which makes Perl slightly more functional',
+    'dist'         => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
 );

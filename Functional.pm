@@ -1,13 +1,14 @@
 package Language::Functional;
 
 use strict;
+use warnings;
 use Carp;
 no strict 'refs';
 use vars qw($VERSION @ISA @EXPORT_OK %EXPORT_TAGS $INFINITE);
 require Exporter;
 
 @ISA = qw(Exporter);
-$VERSION = '0.03';
+$VERSION = '0.04';
 $INFINITE = 8192;
 
 my @methods = qw(show inc double square cons max min even odd 
@@ -1649,7 +1650,9 @@ Leon Brocard E<lt>F<acme@astray.com>E<gt>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1999, Leon Brocard
+Copyright (C) 1999-2008, Leon Brocard
+
+=head1 LICENSE
 
 This module is free software; you can redistribute it or modify it
 under the same terms as Perl itself.

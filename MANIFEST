@@ -1,6 +1,8 @@
-Changes
+CHANGES
 Functional.pm
 MANIFEST
 Makefile.PL
 README
-test.pl
+t/pod.t
+t/simple.t
+META.yml                                 Module meta-data (added by MakeMaker)
